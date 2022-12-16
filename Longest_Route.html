@@ -1,0 +1,278 @@
+<html>
+  <meta name="viewport" content="initial-scale=0">
+ <style>
+  @media only screen and (max-width: 600px) {
+ body {
+ width: 1500px;
+ height:100%;
+}
+ }
+ /* Text */
+ p {
+  text-align:justify;
+  line-height:2;
+ }
+ li {
+  line-height:1.5;
+ }
+ /* Nav */
+ .menu {
+  background-color:indianred;
+  width:100%;
+  height:40px;
+  font-size:25px;
+  text-align:left;
+ }
+.navSlide{
+  background-color:indianred;
+  width:100%;
+  height:0px;
+  transition: 1s;
+  overflow-y: hidden;
+ }
+ .navbtno {
+  height:100%;
+  background-color: indianred;
+  border:0px;
+  font-size:25px;
+  float:right;
+  display:;
+ }
+ .navbtnc {
+  display:none;
+  height:100%;
+  background-color: indianred;
+  border:0px;
+  font-size:25px;
+  float:right;
+ }
+ /*Heading*/
+ .heading {
+  text-align:center;
+  background-color: lightblue;
+ }
+ /* page */
+ .page {
+  width:100%;
+  height:44px;
+  font-size:35px;
+  background-color:white;
+ }
+ /*img*/
+
+  #logo {
+  float:left;
+ }
+  .copyright {
+  float:bottom;
+  color:black;
+  background-color: #b4b4b4;
+ }
+ h1 {
+  font-family:Times New Roman;
+ }
+ h2,h3,h4 {
+  font-family:serif;
+ }
+  .map {
+  background-image: url('longestMap.jpg');
+  background-size: cover;
+  width:100%;
+  height:60%;
+ }
+
+.b2 {
+ font-size:20px;
+ background-color: green;
+ color:white;
+ text-decoration: none;
+ border-radius:5px;
+ float:left;
+ padding:14px 20px;
+ display:inline-block;
+}
+
+.WhatsApp-btn {
+ width:50px;
+ height: 50px;
+ background-color:transparent;
+ border:0px;
+}
+
+.screen {
+ width: 1500px;
+ height:100%;
+}
+
+.copy {
+  width:255px;
+  height:25px;
+  background: transparent;
+  border:1.5px solid black;
+border-radius: 100px;
+}
+.inpCopy {
+  background-color: transparent;
+  border:0px;
+  outline:none;
+}
+.copy-Btn {
+  background-color: transparent;
+  border:0px;
+  height: 100%;
+  border-left:1.5px solid black;
+#copyboard {
+  position: fixed;
+  font-size:30px;
+  bottom:10%;
+  left:48%;
+  background-color:black;
+  color:white;
+  display:none;
+  font-family: 'Times New Roman', Times, serif;
+}
+ </style>
+ 
+ <body>
+   <img src="logo.png" width="40px" height="40px" id="logo"/>
+  <div class="menu">
+  <b>Railway Express </b>  
+  <button class="navbtno" id="navO" onclick="navOpen()">&#9776;</button>
+  <button class="navbtnc" id="navC" onclick="navClose()">X</button>
+   </div>
+    <div class="navSlide" id="navMenu"><hr>
+     <a href="Index.html">Home</a><br>
+     <a href="Evolution.html">Evolution</a><br>
+     <a href="Fastest_Train.html">Fastest Train</a><br>
+ <a href="Longest_Train.html">Longest Train</a><br>
+     <a href="Longest_Route.html">Longest Route</a>
+   </div>
+   
+   
+   
+   <!--heading-->
+   <div class="heading">
+    <h1>INDIAN RALWAYS</h1>
+   </div>
+   
+   <!--NavBar-->
+   <div class="navSlide" id="navMenu">
+
+   </div>
+   
+<!-- Topics -->
+
+    <div class="Topics"><h2>&nbsp;&nbsp;&nbsp;Topics</h2></div>
+    <div class="list" id="topicsList">
+     <b>
+ <li>Introduction</li><br>
+ <li>Evolution</li><br>
+ <li>Fastest Train</li><br>
+ <li>Longest Train</li><br>
+ <li><mark>Longest route</mark></li><br>
+ </b>
+   </div>
+   <hr>
+   <!-- Fastest Of Indian Railways -->
+   <center><h2> Longest Route </h2></center>
+ 
+ <p>The list of longest train route services of Indian Railways (which serves more than 2000 kms) contains regular passenger rail services that are currently scheduled and running directly between two cities of India which are more than 2,000 km (1,200 mi) apart. The special trains, coach changes, shunting or station transfers are not listed here.</p>
+ <p>Indian Railways (IR) is one of the world's largest railway networks comprising 115,000 km (71,000 mi) of track over a route of 67,312 km (41,826 mi) and 7,112 stations.In 2014–15, IR carried 8.397 billion passengers annually or more than 23 million passengers a day (roughly half of whom were suburban passengers) and 1058.81 million tons of freight in the year. IR runs 12,617 passenger trains and 7,421 freight trains daily. Since Indian Railways operates many trains per day, it is difficult to include train services with less than 2000 km length into a table.</p>
+ <div class="map"></div>
+ <center><b>Route</b></center>
+  <hr>
+<br><br>
+<div class="page">
+ <center>
+  <a href="longest Train.html" class="b2">Back</a>
+ </center>
+</div>
+<br>
+<p>
+  <center>
+Website (Official) :- <a href="https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,4,1244">indianrailways.gov.in</a></center></p>
+<div class="copyright">
+      <center><br>
+        <img src="logo.png" width="80px" height="80px">
+        <h4>Powered by Railway Express</h4>
+      </center><br>
+   
+   <center> 
+ <div class="copy">
+   <input type="text" id="copyId" class="inpCopy" value="https://railwayexpress.w3spaces.com/" readonly>
+. &nbsp;
+   <button class="copy-Btn" onclick="copybtn()">Copy</button>
+ </div>
+ <br>
+ <div id="copyboard">copied</div>
+ <button class="WhatsApp-btn" onclick="whatsappBtn()"><img src="whatsapp.png" width="35px" height="35px"/></button>
+ 
+ <button onclick="telegramBtn()" class="WhatsApp-btn"><img src="telegram.png" width="35px" height="35px"/></button>
+ 
+ <button onclick="facebookBtn()" class="WhatsApp-btn">
+   <img src="facebook.png" width="35px" height="35px"/></button>
+ 
+ <button onclick="twitterBtn()" class="WhatsApp-btn"><img src="twitter.png" width="35px" height="35px"/></button>
+ 
+ <button onclick="gmailBtn()" class="WhatsApp-btn"><img src="gmail.png" width="35px" height="35px"/></button></center>
+  
+  <center>
+ <a href="Feedback.html">Feedback</a> |
+ <a href="ContactUs.html">Contact Us</a> |
+ <a href="About.html">About</a>
+ <br>
+<div class="copyright"><center><br>&copy; copyright 2022 Railway Express. All rights reserved<center><br></div>
+  </body>
+  <script>
+  function navOpen() {
+   document.getElementById("navMenu").style.height ="120px";
+   document.getElementById("navO").style.display ="none";
+   document.getElementById("navC").style.display ="block";
+  }
+  function navClose() {
+   document.getElementById("navMenu").style.height ="0%";
+  
+  document.getElementById("navO").style.display ="block";
+   document.getElementById("navC").style.display ="none";
+  }
+  
+  function init() {
+    
+    let postUrl = encodeURIComponent("document.location.href");
+    
+   let postTitle = encodeURIComponent("hell everyone...")
+  }
+  
+  function whatsappBtn() {
+    location.href = "https://wa.me/?text=https://railwayexpress.w3spaces.com/";
+  }
+  function telegramBtn() {
+    location.href = "https://telegram.me/share/url?url=https://railwayexpress.w3spaces.com/";
+  }
+  function facebookBtn() {
+    location.href = "https://www.facebook.com/sharer.php?u=https://railwayexpress.w3spaces.com/&text=https://railwayexpress.w3spaces.com/";
+  }
+  
+  function twitterBtn() {
+    location.href = "https://twitter.com/share?url=https://railwayexpress.w3spaces.com/&text=https://railwayexpress.w3spaces.com/";
+  }
+  function gmailBtn() {
+    location.href = "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=&su=Your+Subject+here&body='+https://railwayexpress.w3spaces.com/+'&ui=2&tf=1&pli=1";
+  }
+  init();
+  
+  function copybtn() {
+    var copyText = document.getElementById("copyId");
+    
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText("https://railwayexpress.w3spaces.com/");
+ 
+ document.getElementById("copyboard").style.display = 'block';
+ 
+ setTimeout(function() {
+document.getElementById("copyboard").style.display = 'none';
+ },1000);
+  }
+  </script>
+ </html>

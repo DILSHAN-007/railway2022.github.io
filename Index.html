@@ -1,0 +1,421 @@
+<html>
+ <meta name="viewport" content="initial-scale=0">
+ <style>
+ @media only screen and (max-width: 600px) {
+ body {
+ width: 1500px;
+ height:100%;
+}
+}
+ /* Text */
+ h {
+  font-size:30px;
+ }
+ p {
+  width:100%;
+  text-align:justify;
+  line-height: 2;
+  -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+ }
+ li {
+   -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+ }
+ /* Nav */
+ .menu {
+  background-color:indianred;
+  width:100%;
+  height:40px;
+  font-size:30px;
+  text-align:left;
+   -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+ }
+.navSlide{
+  background-color:indianred;
+  width:100%;
+  height:0px;
+  transition: 1s;
+  overflow-y: hidden;
+   -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+ }
+ .navbtno {
+  height:30px;
+  background-color: indianred;
+  border:0px;
+  font-size:25px;
+  float:right;
+   -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+  
+ }
+ .navbtnc {
+  display:none;
+  height:20px;
+  background-color: indianred;
+  border:0px;
+  font-size:25px;
+  float:right;
+   -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+ }
+ /*Heading*/
+ .heading {
+  width:100%;
+  text-align:center;
+  background-color: lightblue;
+   -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+ }
+ /* page */
+ .page {
+  width:100%;
+  height:44px;
+  font-size:35px;
+  background-color:white;
+   -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+ }
+ /*img*/
+ .ThaneSmaller {
+  background-image: url('Tanna_Village_and_Smaller.jpg');
+  background-size: cover;
+  width:80%;
+  height:30%;
+ }
+ .ThaneLonger {
+  background-image: url('Tanna_Railway_and_Longer.jpg');
+  background-size: cover;
+  width:80%;
+  height:30%;
+ }
+ #img {
+  float:right;
+ }
+ 
+ .copyright {
+  width:100%;
+  float:bottom;
+  color:black;
+  background-color: #b4b4b4;
+   -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+ }
+ #logo {
+  float:left;
+ }
+ h1 {
+  font-family:Times New Roman;
+   -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+ }
+ h2,h3,h4,h5 {
+  font-family:serif;
+   -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+ }
+ 
+.b1 {
+ font-size:20px;
+ background-color: green;
+ color:white;
+ text-decoration: none;
+ border-radius:5px;
+ float:right;
+ padding:14px 20px;
+ display:inline-block;
+}
+
+ .WhatsApp-btn {
+ width:50px;
+ height: 50px;
+ background-color:transparent;
+ border:0px;
+}
+
+.screen {
+ width: 1500px;
+ height:100%;
+}
+
+.copy {
+  width:255px;
+  height:25px;
+  background: transparent;
+  border:1.5px solid black;
+border-radius: 100px;
+}
+.inpCopy {
+  background-color: transparent;
+  border:0px;
+  outline:none;
+}
+.copy-Btn {
+  background-color: white;
+  border:0px;
+  height: 100%;
+  border-left: 1.5px solid black;
+  background-color: transparent;
+}
+#copyboard {
+  position: fixed;
+  font-size:30px;
+  bottom:10%;
+  left:48%;
+  background-color:black;
+  color:white;
+  display:none;
+  font-family: 'Times New Roman', Times, serif;
+}
+ </style>
+ 
+ <body>
+  <div class="screen">
+   <img src="logo.png" width="40px" height="40px" id="logo"/>
+   <div class="menu">
+  <b>Railway Express </b>
+  <button class="navbtno" id="navO" onclick="navOpen()">&#9776;</button>
+  <button class="navbtnc" id="navC" onclick="navClose()">X</button>
+   </div>
+    <div class="navSlide" id="navMenu"><hr>
+     <a href="Index.html">Home</a><br>
+     <a href="Evolution.html">Evolution</a><br>
+      <a href="Fastest_Train.html">Fastest Train</a><br>
+     <a href="Longest_Train.html">Longest Train</a><br>
+     <a href="Longest_Route.html">Longest Route</a><br>
+     
+   </div>
+   
+   
+   <!--heading-->
+   <div class="heading">
+    <h1>INDIAN RALWAYS</h1>
+   </div>
+   
+   <!--NavBar-->
+  
+   
+<!-- Topics -->
+    <div class="Topics"><h2>&nbsp;&nbsp;&nbsp;<span>Topics</span></h2>
+    
+         
+     <b>
+ <li><mark>Introduction</mark></li><br>
+ <li>Evolution</li><br>
+ <li>Fastest Train</li><br>
+ <li>Longest Train</li><br>
+ <li>Longest route</li><br>
+ </b>
+   </div>
+   <hr>
+   <!-- History Of Indian Railways -->
+   <h3> <li>History of Indian Railways</li></h3>
+ 
+<p>
+    
+    <p>Indian Railways (IR) is the state-owned railway company of India. It is one of the largest and 
+
+busiest rail networks in the world, transporting just over six billion passengers and almost 750 
+
+million tones of freight annually. IR is the world’s largest commercial or utility employer, with 
+more than 1.6 million employees.
+Mumbai (formerly Bombay) is a 603.4 km² (233 sq mi) island on the west cost of India. It 
+became a British possession when given as dowry from King John I of Portugal at the marriage 
+of his daughter Catherine of Braganza to King Charles II of England in 1661. 
+Indian railways under British colonialism, it is difficult to overstate the importance of railways to 
+India. Railways had transformative effects on the expansion of markets, price and wage 
+convergence, and famine amelioration. The initial rail network was built and owned by private 
+British companies. A clause in the original concession contracts, however, allowed the colonial 
+Government of India to purchase private railway companies only at specified future dates. 
+Beginning in 1880, the Government exercised the takeover option in every case and by 1910 the 
+Government owned over 90 percent of railway miles compared to less than 10 percent in 1875.
+The state takeover of Indian railways was different from railway nationalizations taking place in 
+other countries around the same time. Few other countries experienced such a large and 
+pervasive ownership change as in India. The Indian experience, thus, provides a great context to 
+evaluate the relationship between colonialism, state ownership and productivity.
+Indian railways experienced relatively rapid Total Factor Productivity (TFP) growth from 1874 
+to 1912 despite increasing gover""""nment ownership. The average annual rate of 1.7 percent is 
+comparable to US railways in the same period and greater than British railways. In other words, 
+India’s TFP growth was similar to or greater than advanced countries.</p>
+  
+  
+   <h3> <li>History of Indian Railways</li></h3>
+
+  <p>
+    The first railway proposals for India were made in Madras in 1832. The country's first transport train, Red Hill Railway (built by Arthur Cotton to transport granite for road-building), ran from Red Hills to the Chintadripet bridge in Madras in 1836-1837. In 1845, the Godavari Dam Construction Railway was built by Cotton at Dowleswaram in Rajahmundry, to supply stone for the construction of a dam over the Godavari River. In 1851, the Solani Aqueduct Railway was built by Proby Cautley in Roorkee to transport construction materials for an aqueduct over the Solani River. These railway tracks were dismantled after these projects were completed and no longer exist.
+   </p>
+   <p>
+    India's first passenger train, operated by the Great Indian Peninsula Railway and hauled by three steam locomotives (Sahib, Sindh and Sultan), ran for 34 kilometres (21 mi) with 400 people in 14 carriages on 1,676 mm (5 ft 6 in) broad gauge track between Bori Bunder (Mumbai) and Thane on 16 April 1853. The Thane viaducts, India's first railway bridges, were built over the Thane creek when the Mumbai-Thane line was extended to Kalyan in May 1854. Eastern India's first passenger train ran 39 km (24 mi) from Howrah, near Kolkata, to Hoogly on 15 August 1854. The first passenger train in South India ran 97 km (60 mi) from Royapuram-Veyasarapady (Madras) to Wallajaroad (Arcot) on 1 July 1856.
+   </p>
+   <p>
+    On 24 February 1873, a horse-drawn 3.8 km (2.4 mi) tram opened in Calcutta between Sealdah and Armenian Ghat Street. On 9 May 1874, a horse-drawn tramway began operation in Bombay between Colaba and Parel. In 1879, the Nizam's Guaranteed State Railway was established which built several railway lines across the then Hyderabad State with Kachiguda Railway Station serving as its headquarters. In 1897, lighting in passenger coaches was introduced by many railway companies. On 3 February 1925, the first electric passenger train in India ran between Victoria Terminus and Kurla.
+    </p>
+  </body>
+  <p>
+   The organization of Indian railways into regional zones began in 1951, when the Southern (14 April 1951), Central (5 November 1951), and Western (5 November 1951) zones were created. Fans and lights were mandated for all compartments in all passenger classes in 1951, and sleeping accommodations were introduced in coaches. In 1956, the first fully air-conditioned train was introduced between Howrah and Delhi (Presently known as Poorva Express). Ten years later, the first containerised freight service began between Mumbai and Ahmedabad. In 1974, Indian Railways endured a 20 day strike, which damaged the nation's economy.
+  </p>
+   <p>
+   In 1986, computerized ticketing and reservations were introduced in New Delhi. In 1988, the first Shatabdi Express was introduced between New Delhi and Jhansi; it was later extended to Bhopal. Two years later, the first self-printing ticket machine (SPTM) was introduced in New Delhi. In 1993, air-conditioned three-tier coaches and a sleeper class (separate from second class) were introduced on IR. The CONCERT system of computerized reservations was deployed in New Delhi, Mumbai and Chennai in September 1996. In 1998, coupon validating machines (CVMs) were introduced at Mumbai Chhatrapati Shivaji Maharaj Terminus. The nationwide concierge system began operation on 18 April 1999. In February 2000, the Indian Railways website went online. Individuals can book reserved tickets in online through Indian Railways Catering and Tourism Corporation's (IRCTC) official website (<a href="https://www.irctc.co.in/nget/train-search">www.irctc.co.in</a>). On 3 August 2002, IR began online train reservations and ticketing. The Railway Budget was usually presented two days before the Union budget every year till 2016. The central government approved merger of the Rail and General budgets from next year, ending a 92-year-old practice of a separate budget for the nation's largest transporter. On 31 March 2017, Indian Railways announced that the country's entire rail network would be electrified by 2022 or 2023, and become a net-zero (carbon emission) railway by 2030.
+  </p>
+   <p>
+   On 22 March 2020, Indian Railways announced a nationwide shutdown of passenger rail service to combat the COVID-19 pandemic in India. This became part of a nationwide lockdown to slow the spread of the novel coronavirus. The railway shutdown was initially scheduled to last from 23 to 31 March, but the nationwide lockdown, as announced by Prime Minister Narendra Modi on 24 March, was to last 21 days. The national rail network is maintaining its freight operations during the lockdown, to transport essential goods. On 29 March, Indian Railways announced that it would start service for special parcel trains to transport essential goods, in addition to regular freight service. The national rail operator has also announced plans to convert coaches into isolation wards for patients of COVID-19 The railways have since reopened are currently functioning in 2022.
+  </p>
+  <center>
+  <img src="Tanna_Village_and_Smaller.jpg" width="100%"/>
+   <h5>The smaller railway viaduct near Thane in 1855</h5>
+   <br>
+    <img src="Tanna_Railway_and_Longer.jpg" width="100%"/>
+    <h5>The longer railway viaduct near Thane in 1855</h5>
+   </center>
+    <hr>
+<br><br>
+<div class="page">
+ <center>
+    <a href="Evolution.html" class="b1">&nbsp;Next&nbsp;</a>
+ </center>
+</div>
+<br>
+ <p>
+  <center>
+Website (Official) :- <a href="https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,4,1244">indianrailways.gov.in</a></center></p>
+
+<br><br>
+<div class="copyright"><center>
+   <center><br>
+     <img src="logo.png" width="80px" height="80px">
+     <h4>Powered by Railway Express</h4>
+   </center>
+   
+   <br>
+ <center> 
+ <div class="copy">
+   <input type="text" id="copyId" class="inpCopy" value="https://railwayexpress.w3spaces.com/" readonly>
+. &nbsp;
+   <button class="copy-Btn" onclick="copybtn()">Copy</button>
+ </div>
+ <div id="copyboard">copied</div>
+ <button class="WhatsApp-btn" onclick="whatsappBtn()"><img src="whatsapp.png" width="35px" height="35px"/></button>
+ 
+ <button onclick="telegramBtn()" class="WhatsApp-btn"><img src="telegram.png" width="35px" height="35px"/></button>
+ 
+ <button onclick="facebookBtn()" class="WhatsApp-btn">
+   <img src="facebook.png" width="35px" height="35px"/></button>
+ 
+ <button onclick="twitterBtn()" class="WhatsApp-btn"><img src="twitter.png" width="35px" height="35px"/></button>
+ 
+ <button onclick="gmailBtn()" class="WhatsApp-btn"><img src="gmail.png" width="35px" height="35px"/></button></center>
+ 
+ <a href="Feedback.html">Feedback</a> |
+ <a href="ContactUs.html">Contact Us</a> |
+ <a href="About.html">About</a>
+ <br>
+ &copy; copyright 2022 Railway Express. All rights reserved<center><br>
+ </div>
+<br><br><br>
+
+
+ </div>
+  </body>
+  
+  
+  
+  <script>
+  function navOpen() {
+   document.getElementById("navMenu").style.height ="120px";
+   document.getElementById("navO").style.display ="none";
+   document.getElementById("navC").style.display ="block";
+  }
+  function navClose() {
+   document.getElementById("navMenu").style.height ="0%";
+  
+  document.getElementById("navO").style.display ="block";
+   document.getElementById("navC").style.display ="none";
+  }
+  
+  
+  function init() {
+    
+    let postUrl = encodeURIComponent("document.location.href");
+    
+   let postTitle = encodeURIComponent("hell everyone...")
+  }
+  
+  function whatsappBtn() {
+    location.href = "https://wa.me/?text=https://railwayexpress.w3spaces.com/";
+  }
+  function telegramBtn() {
+    location.href = "https://telegram.me/share/url?url=https://railwayexpress.w3spaces.com/";
+  }
+  function facebookBtn() {
+    location.href = "https://www.facebook.com/sharer.php?u=https://railwayexpress.w3spaces.com/&text=https://railwayexpress.w3spaces.com/";
+  }
+  
+  function twitterBtn() {
+    location.href = "https://twitter.com/share?url=https://railwayexpress.w3spaces.com/&text=https://railwayexpress.w3spaces.com/";
+  }
+  function gmailBtn() {
+    location.href = "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=&su=Your+Subject+here&body='+https://railwayexpress.w3spaces.com/+'&ui=2&tf=1&pli=1";
+  }
+  init();
+  
+  function copybtn() {
+    var copyText = document.getElementById("copyId");
+    
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText("https://railwayexpress.w3spaces.com/");
+ 
+ document.getElementById("copyboard").style.display = 'block';
+ 
+ setTimeout(function() {
+document.getElementById("copyboard").style.display = 'none';
+ },1000);
+  }
+  </script>
+ </html>

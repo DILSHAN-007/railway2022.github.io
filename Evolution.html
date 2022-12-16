@@ -1,0 +1,482 @@
+<html>
+ <meta name="viewport" content="initial-scale=0">
+ <style>
+ @media only screen and (max-width: 600px) {
+ body {
+ width: 1500px;
+ height:100%;
+}
+}
+ /* Text */
+ h {
+  font-size:30px;
+ }
+ p {
+  width:100%;
+  text-align:justify;
+  line-height: 2;
+  -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+ }
+ li {
+   -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+ }
+ /* Nav */
+ .menu {
+  background-color:indianred;
+  width:100%;
+  height:40px;
+  font-size:30px;
+  text-align:left;
+   -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+ }
+.navSlide{
+  background-color:indianred;
+  width:100%;
+  height:0px;
+  transition: 1s;
+  overflow-y: hidden;
+   -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+ }
+ .navbtno {
+  height:30px;
+  background-color: indianred;
+  border:0px;
+  font-size:25px;
+  float:right;
+   -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+  
+ }
+ .navbtnc {
+  display:none;
+  height:20px;
+  background-color: indianred;
+  border:0px;
+  font-size:25px;
+  float:right;
+   -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+ }
+ /*Heading*/
+ .heading {
+  width:100%;
+  text-align:center;
+  background-color: lightblue;
+   -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+ }
+ /* page */
+ .page {
+  width:100%;
+  height:44px;
+  font-size:35px;
+  background-color:white;
+   -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+ }
+ /*img*/
+ .ThaneSmaller {
+  background-image: url('Tanna_Village_and_Smaller.jpg');
+  background-size: cover;
+  width:80%;
+  height:30%;
+ }
+ .ThaneLonger {
+  background-image: url('Tanna_Railway_and_Longer.jpg');
+  background-size: cover;
+  width:80%;
+  height:30%;
+ }
+ #img {
+  float:right;
+ }
+ 
+ .copyright {
+  width:100%;
+  float:bottom;
+  color:black;
+  background-color: #b4b4b4;
+   -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+ }
+ #logo {
+  float:left;
+ }
+ h1 {
+  font-family:Times New Roman;
+   -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+ }
+ h2,h3,h4,h5 {
+  font-family:serif;
+   -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+ }
+ 
+.b1 {
+ font-size:20px;
+ background-color: green;
+ color:white;
+ text-decoration: none;
+ border-radius:5px;
+ float:right;
+ padding:14px 20px;
+ display:inline-block;
+}
+
+
+.WhatsApp-btn {
+ width:50px;
+ height: 50px;
+ background-color:transparent;
+ border:0px;
+}
+
+.screen {
+ width: 1500px;
+ height:100%;
+}
+
+.copy {
+  width:255px;
+  height:25px;
+  background: transparent;
+  border:1.5px solid black;
+border-radius: 100px;
+}
+.inpCopy {
+  background-color: transparent;
+  border:0px;
+  outline:none;
+}
+.copy-Btn {
+  background-color: white;
+  border:0px;
+  height: 100%;
+  border-left:1.5px solid black;
+  background-color: transparent;
+}
+#copyboard {
+  position: fixed;
+  font-size:30px;
+  bottom:10%;
+  left:48%;
+  background-color:black;
+  color:white;
+  display:none;
+  font-family: 'Times New Roman', Times, serif;
+}
+ </style>
+ 
+ <body>
+  <div class="screen">
+   <img src="logo.png" width="40px" height="40px" id="logo"/>
+   <div class="menu">
+  <b>Railway Express </b>
+  <button class="navbtno" id="navO" onclick="navOpen()">&#9776;</button>
+  <button class="navbtnc" id="navC" onclick="navClose()">X</button>
+   </div>
+    <div class="navSlide" id="navMenu"><hr>
+     <a href="Index.html">Home</a><br>
+     <a href="Evolution.html">Evolution</a><br>
+      <a href="Fastest_Train.html">Fastest Train</a><br>
+     <a href="Longest_Train.html">Longest Train</a><br>
+     <a href="Longest_Route.html">Longest Route</a><br>
+   </div>
+   
+   
+   <!--heading-->
+   <div class="heading">
+    <h1>INDIAN RALWAYS</h1>
+   </div>
+   
+   <!--NavBar-->
+  
+   
+<!-- Topics -->
+    <div class="Topics"><h2>&nbsp;&nbsp;&nbsp;<span>Topics</span></h2>
+    
+         
+     <b>
+ <li>Introduction</li><br>
+ <li><mark>Evolution</mark></li><br>
+ <li>Fastest Train</li><br>
+ <li>Longest Train</li><br>
+ <li>Longest route</li><br>
+ </b>
+   </div>
+   <hr>
+   <!-- History Of Indian Railways -->
+   <h3> <li>History of Indian Railways</li></h3>
+ 
+<p>
+    
+    The Railways’ rate of growth was 
+very high during the British Raj. In 
+less than 20 years after the steam 
+engine came to India in 1853, all its 
+major metropolitan centres –
+including Delhi, Bombay, Calcutta 
+and Madras – were linked by an 
+extensive railway network. The 
+country’s hill railways were laid in 
+the next 50 years. Less than a 
+century after the railways chugged 
+into India, as many as 54,000 kilometers of tracks were added to India’s network at the annual 
+rate of 600 km. However, in the 69 years since the country’s Independence, successive 
+governments managed to lay only around 10,000 km of new tracks – at the approximate rate of 
+160 km a year. While India’s erstwhile British rulers had ensured that all the five hill railways in 
+the country became operational by 1930, Independent India has been struggling to complete 
+construction work on the Kashmir rail link for the last 69 years.
+
+    </p>
+    
+   <h3><u>Journey of Indian Railway System</u></h3>
+   <h4>1853-1869: Launching passenger rail services</h4>
+   <p>
+
+    Although rail services in India were initially proposed in the 1830s, historians cite 16 April 1853 as the kick starter for India’s passenger rail revolution. On this date, the country’s first passenger train set off on a 34km journey between Bombay’s Bori Bunder station and Thane. It consisted of 14 cars being hauled by three steam locomotives, and carried 400 passengers. This early era of passenger travel was primarily funded by private companies under a guarantee system created by the British Parliament, which ensured they would receive a certain rate of interest on their capital investment. In total, eight railway companies were established between 1855 and 1860, including 
+Eastern India Railway, Great India Peninsula Company, Madras Railway, Bombay Baroda and 
+Central India Railway.
+    </p>
+     <img src="first-train.jpg" width="240px" height="170px"/>
+     
+     <h4>1901-1925: Moves towards centralisation</h4>
+  <p>
+  After years of construction and financial 
+investment the railways finally began to 
+make a profit in 1901. Nevertheless, it 
+was during the early years of this century 
+that the scale of government intervention 
+increased dramatically. GIPR was the first 
+company to become state-owned in 1900. 
+By 1907, the government had purchased 
+all major lines and began leasing them 
+back to private operators.
+  </p>
+   <img src="Train(1901s).jpg" width="240px" height="170px"/>
+  
+  <h4>1925-1946: Electrification and hard times</h4>
+  <p>
+   The first electric train ran between Bombay and Kurla on 3 February, 1925, setting a precedent 
+for further electrification in the coming years. By 1929, the railway network had grown to an 
+overall length of 66,000km and carried approximately 620 million passengers and 90 million 
+tonnes of goods annually.
+   </p>
+   <img src="Train(1925s).jpg" width="240px" height="170px"/>
+  
+   <h4>1980-2000: Technology and phasing out steam</h4>
+  <p>
+   The 1980s saw a complete phase-out of steam locomotives, as electrification was spurred on by 
+energy crises in the 1970s. Around 4,500km of track was electrified between 1980 and 1990. 
+Meanwhile, India’s first metro system opened in Calcutta in 1984.
+   </p>
+   <p>
+    Though economic stagnation and political upheaval blocked growth of the network in the 80s, 
+the 90s saw the opening of the Konkan Railway; a 738km behemoth connecting the western 
+coast of India with the rest of the country.
+    </p>
+     <img src="Train(1980s).jpg" width="240px" height="170px"/>
+    
+    <h4>2000-2017: Moving online</h4>
+    <p>
+     Since 2000, metro stations have continued to pop up in India’s major cities, including Delhi 
+(2002), Bangalore (2011), Gurgaon (2013) and Mumbai (2014). The noughties also saw the 
+creation of the network’s East Coast, South Western, South East Central, North Central and West 
+Central Railway zones, in 2002. Nevertheless, arguably the greatest step forward for IR was the 
+launch of online train reservations and ticketing through its IRCTC system in 2002. Passengers 
+could now book their journeys online or buy tickets from thousands of agents across the country 
+– a necessary addition, considering that passengers had reportedly traversed a distance of more 
+than 4.5 billion kilometres on the railways in the period from 2000-2001
+     </p>
+      <img src="Train(2000s).jpg" width="240px" height="170px"/>
+     
+      <h3><u>Challenges faced by Railways in Covid-19 times</u></h3>
+     <p>
+      The main challenge in transporting Medical Oxygen Tankers is to find the shortest suitable 
+railway route from origin to destination. The physical dimension of the tanker loaded on the 
+railway wagon (Over Dimensional  <img src="covid chart.jpg" width="200px" height="200px"id="img"/>
+Consignment (ODC) in railway’s 
+technical language can safely pass 
+through various fixed railway 
+installations without any 
+infringement. There are several 
+other constraints like the presence of 
+low height fixed structures like 
+Road over Bridges (ROB), low 
+height overhead equipment wires, 
+restrictions on bridges, curves, and 
+running through platforms were 
+examined expeditiously and a 
+suitable route was identified from 
+Mumbai to Visakhapatnam.
+     <br>
+     <b> But it was a success…… </b>
+   <br>
+      Efforts were made to ensure 
+intensive monitoring and route 
+mapping has ensured that the train 
+could cover this distance in a short 
+time. The top management of Railways i.e., the Railway Board, Zonal/Divisional level 
+management has spent a lot of time to make this happen in the shortest time to bail out Mumbai 
+city out of the oxygen crisis. This all was done despite Covid pandemic and shortage of working 
+staff and resources and running all coaching and freight trains. This movement was successfully 
+planned as a green initiative project (green corridor). This also required coordination with states, 
+industry and other stakeholders viz Ministry of Road Transport & Highways & DPIIT etc.
+      </p>
+      <p>
+       This quick and effective action is contrary to the rigid image Railways has been bearing for 
+decades. They have shown proactiveness and flexibility in their approach to making this 
+endeavour a success.
+       </p>
+    <hr>
+<br><br>
+<div class="page">
+ <center>
+    <a href="Evolution.html" class="b1">&nbsp;Next&nbsp;</a>
+ </center>
+</div>
+<br>
+ <p>
+  <center>
+Website (Official) :- <a href="https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,4,1244">indianrailways.gov.in</a></center></p>
+
+<div class="copyright">
+      <center><br>
+        <img src="logo.png" width="80px" height="80px">
+        <h4>Powered by Railway Express</h4>
+      </center>
+   
+   <center> <br>
+ <div class="copy">
+   <input type="text" id="copyId" class="inpCopy" value="https://railwayexpress.w3spaces.com/" readonly>
+. &nbsp;
+   <button class="copy-Btn" onclick="copybtn()">Copy</button>
+ </div>
+ <div id="copyboard">copied</div>
+ <button class="WhatsApp-btn" onclick="whatsappBtn()"><img src="whatsapp.png" width="35px" height="35px"/></button>
+ 
+ <button onclick="telegramBtn()" class="WhatsApp-btn"><img src="telegram.png" width="35px" height="35px"/></button>
+ 
+ <button onclick="facebookBtn()" class="WhatsApp-btn">
+   <img src="facebook.png" width="35px" height="35px"/></button>
+ 
+ <button onclick="twitterBtn()" class="WhatsApp-btn"><img src="twitter.png" width="35px" height="35px"/></button>
+ 
+ <button onclick="gmailBtn()" class="WhatsApp-btn"><img src="gmail.png" width="35px" height="35px"/></button></center>
+  
+  <center>
+ <a href="Feedback.html">Feedback</a> |
+ <a href="ContactUs.html">Contact Us</a> |
+ <a href="About.html">About</a>
+ <br>
+ &copy; copyright 2022 Railway Express. All rights reserved<center><br></div>
+<br><br><br>
+
+
+ </div>
+  </body>
+  
+  
+  
+  <script>
+  function navOpen() {
+   document.getElementById("navMenu").style.height ="120px";
+   document.getElementById("navO").style.display ="none";
+   document.getElementById("navC").style.display ="block";
+  }
+  function navClose() {
+   document.getElementById("navMenu").style.height ="0%";
+  
+  document.getElementById("navO").style.display ="block";
+   document.getElementById("navC").style.display ="none";
+  }
+  
+  function init() {
+    
+    let postUrl = encodeURIComponent("document.location.href");
+    
+   let postTitle = encodeURIComponent("hell everyone...")
+  }
+  
+  function whatsappBtn() {
+    location.href = "https://wa.me/?text=https://railwayexpress.w3spaces.com/";
+  }
+  function telegramBtn() {
+    location.href = "https://telegram.me/share/url?url=https://railwayexpress.w3spaces.com/";
+  }
+  function facebookBtn() {
+    location.href = "https://www.facebook.com/sharer.php?u=https://railwayexpress.w3spaces.com/&text=https://railwayexpress.w3spaces.com/";
+  }
+  
+  function twitterBtn() {
+    location.href = "https://twitter.com/share?url=https://railwayexpress.w3spaces.com/&text=https://railwayexpress.w3spaces.com/";
+  }
+  function gmailBtn() {
+    location.href = "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=&su=Your+Subject+here&body='+https://railwayexpress.w3spaces.com/+'&ui=2&tf=1&pli=1";
+  }
+  init();
+  
+  function copybtn() {
+    var copyText = document.getElementById("copyId");
+    
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText("https://railwayexpress.w3spaces.com/");
+ 
+ document.getElementById("copyboard").style.display = 'block';
+ 
+ setTimeout(function() {
+document.getElementById("copyboard").style.display = 'none';
+ },1000);
+  }
+  </script>
+ </html>

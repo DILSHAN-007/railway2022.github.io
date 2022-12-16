@@ -1,0 +1,209 @@
+<html>
+  <meta name="viewport" content="initial-scale=0">
+ <style>
+ 
+ @media only screen and (max-width: 600px) {
+ body {
+ width: 1500px;
+ height:100%;
+}
+}
+body {
+ width:1500px;
+ height:100%;
+}
+  .menu {
+  background-color:indianred;
+  width:1500px;
+  height:40px;
+  font-size:25px;
+  text-align:left;
+   -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+ }
+ #logo {
+   float:left;
+ }
+ .unicode{
+  font-size: 16px;
+  border:1px solid black;
+  padding: 10px 10px;
+  border-radius: 100px;
+  float:left;
+  width:20px;
+  height:20px;
+ }
+.text{
+ width:90%;
+}
+ .copyright {
+  width:1500px;
+  float:bottom;
+  color:black;
+  background-color: #b4b4b4;
+   -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+ }
+ table,h {
+  -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+ }
+ 
+ .WhatsApp-btn {
+ width:50px;
+ height: 50px;
+ background-color:transparent;
+ border:0px;
+}
+
+.screen {
+ width: 1500px;
+ height:100%;
+}
+
+.copy {
+  width:255px;
+  height:25px;
+  background: transparent;
+  border:1.5px solid black;
+border-radius: 100px;
+}
+.inpCopy {
+  background-color: transparent;
+  border:0px;
+  outline:none;
+}
+.copy-Btn {
+  background-color: transparent;
+  border:0px;
+  height: 100%;
+  border-left:1.5px solid black;
+}
+#copyboard {
+  position: fixed;
+  font-size:30px;
+  bottom:10%;
+  left:48%;
+  background-color:black;
+  color:white;
+  display:none;
+  font-family: 'Times New Roman', Times, serif;
+}
+ </style>
+ <body>
+    <img src="logo.png" width="40px" height="40px" id="logo"/>
+   <div class="menu">
+  <b>Railway Express </b>
+    </div>
+    <br><br><center>
+    Let's make something awesome together.<br>
+    Don't Hesitate To Connect With Us<br><br>
+    <h3><b> Get in Touch </b> </h3>
+    <table border="0px">
+     <tr>
+    <td class="unicode">&#128205;</td>
+     <td class="text">Address : Minto Circle Near, Anoop shahar Road, Purani Chungi, AMU Campus, Aligarh, Uttar Pradesh 202002</td>
+     </tr>
+     <tr></tr>
+     <tr>
+    <td class="unicode">&#128222;</td>
+    <td class="text">Phone : +91 9876543210</td>
+    </tr>
+     <tr><td></td></tr>
+    <tr>
+    <td class="unicode">&#128231;</td>
+    <td class="text">E-Mail : railwayexpress@gmail.com</td>
+   </tr>
+    <tr><td></td></tr>
+   <tr>
+     <td class="unicode">&#127760;</td>
+     <td class="text">Our WebSite: <a href="Index.html">Railway Express </a></td></tr>
+     <br><br><br>
+     </table>
+     <br><br><br>
+   <div class="copyright">
+        <center><br>
+          <img src="logo.png" width="80px" height="80px">
+          <h4>Powered by Railway Express</h4>
+        </center>
+     
+      <center> <br>
+ <div class="copy">
+   <input type="text" id="copyId" class="inpCopy" value="https://railwayexpress.w3spaces.com/" readonly>
+. &nbsp;
+   <button class="copy-Btn" onclick="copybtn()">Copy</button>
+ </div>
+ <div id="copyboard">copied</div>
+ <button class="WhatsApp-btn" onclick="whatsappBtn()"><img src="whatsapp.png" width="35px" height="35px"/></button>
+ 
+ <button onclick="telegramBtn()" class="WhatsApp-btn"><img src="telegram.png" width="35px" height="35px"/></button>
+ 
+ <button onclick="facebookBtn()" class="WhatsApp-btn">
+   <img src="facebook.png" width="35px" height="35px"/></button>
+ 
+ <button onclick="twitterBtn()" class="WhatsApp-btn"><img src="twitter.png" width="35px" height="35px"/></button>
+ 
+ <button onclick="gmailBtn()" class="WhatsApp-btn"><img src="gmail.png" width="35px" height="35px"/></button></center>
+     
+     <center>
+ <a href="Feedback.html">Feedback</a> |
+ <a href="ContactUs.html">Contact Us</a> |
+ <a href="About.html">About</a>
+ <br>
+ &copy; copyright 2022 Railway Express. All rights reserved<center><br></div>
+<br><br><br></center>
+  </body>
+  <script>
+    function init() {
+    
+    let postUrl = encodeURIComponent("document.location.href");
+    
+   let postTitle = encodeURIComponent("hell everyone...")
+  }
+  
+  function whatsappBtn() {
+    location.href = "https://wa.me/?text=https://railwayexpress.w3spaces.com/";
+  }
+  function telegramBtn() {
+    location.href = "https://telegram.me/share/url?url=https://railwayexpress.w3spaces.com/";
+  }
+  function facebookBtn() {
+    location.href = "https://www.facebook.com/sharer.php?u=https://railwayexpress.w3spaces.com/&text=https://railwayexpress.w3spaces.com/";
+  }
+  
+  function twitterBtn() {
+    location.href = "https://twitter.com/share?url=https://railwayexpress.w3spaces.com/&text=https://railwayexpress.w3spaces.com/";
+  }
+  function gmailBtn() {
+    location.href = "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=&su=Your+Subject+here&body='+https://railwayexpress.w3spaces.com/+'&ui=2&tf=1&pli=1";
+  }
+  init();
+  
+  function copybtn() {
+    var copyText = document.getElementById("copyId");
+    
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText("https://railwayexpress.w3spaces.com/");
+ 
+ document.getElementById("copyboard").style.display = 'block';
+ 
+ setTimeout(function() {
+document.getElementById("copyboard").style.display = 'none';
+ },1000);
+  }
+    
+  </script>
+  </html>
